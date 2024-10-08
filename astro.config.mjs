@@ -7,6 +7,6 @@ import sitemap from "@astrojs/sitemap";
 // https://astro.build/config
 export default defineConfig({
   site: "https://uop-gameplay.github.io",
-  base: "website"
+  base: "website",
   integrations: [mdx(), sitemap()],
 });
