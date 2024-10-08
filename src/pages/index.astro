@@ -63,13 +63,17 @@ const posts = (await getCollection("blog")).sort(
     <div class="grid grid-cols-2 gap-4">
       {
         posts.map((post) => (
-          <div class="transition-transform duration-300 ease-in-out hover:scale-105">
+          <div class="group">
             <a href={`/blog/${post.slug}/`}>
-              <Image
-                class="mb-2 rounded-lg shadow shadow-gray-500"
-                src={post.data.heroImage.url}
-                alt={post.data.description}
-              />
+              <div class="relative mb-2">
+                <Image
+                  class="rounded-lg shadow shadow-gray-500 delay-100"
+                  src={post.data.heroImage.url}
+                  alt={post.data.description}
+                  loading="lazy"
+                />
+                <div class="absolute inset-0 rounded-lg bg-gradient-to-t from-rose-600 via-rose-600/30 opacity-0 transition-all delay-100 duration-300 ease-linear group-hover:opacity-100" />
+              </div>
               <div class="flex flex-col">
                 <h4 class="text-2xl font-semibold">{post.data.title}</h4>
                 <p class="text-gray-500">
