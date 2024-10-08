@@ -13,7 +13,7 @@ const posts = (await getCollection("blog")).sort(
 
 <Layout>
   <section class="mb-8">
-    <h1 class="text-6xl font-black">Broken retail workers wanted!</h1>
+    <h1 class="text-6xl font-black mb-6">Broken retail workers wanted!</h1>
     <div>
       <Image
         class="rounded-lg"
@@ -24,8 +24,8 @@ const posts = (await getCollection("blog")).sort(
     </div>
   </section>
   <section class="mb-8">
-    <h2 class="text-4xl">Unleash your inner rage</h2>
-    <div class="flex w-full gap-2">
+    <h2 class="text-4xl font-bold mb-4">Unleash your inner rage</h2>
+    <div class="flex w-full gap-2 my-4">
       <Image class="rounded-lg w-1/2" src={heroImage} alt="" />
       <Image class="rounded-lg w-1/2" src={heroImage} alt="" />
     </div>
@@ -37,7 +37,7 @@ const posts = (await getCollection("blog")).sort(
     </p>
   </section>
   <section>
-    <h2 class="text-4xl">See what we're working on</h2>
+    <h2 class="text-4xl font-bold mb-4">See what we're working on</h2>
     <div class="grid grid-cols-2 gap-2">
       {
         posts.map((post) => (
@@ -49,7 +49,7 @@ const posts = (await getCollection("blog")).sort(
                 alt={post.data.description}
               />
               <div class="flex flex-col">
-                <h4 class="text-2xl">{post.data.title}</h4>
+                <h4 class="text-2xl font-semibold">{post.data.title}</h4>
                 <p class="text-gray-500">
                   <FormattedDate date={post.data.pubDate} />
                 </p>
