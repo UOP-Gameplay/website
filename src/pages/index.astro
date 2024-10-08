@@ -2,7 +2,6 @@
 import Layout from "@layouts/Layout.astro";
 import { Image } from "astro:assets";
 import heroImage from "@assets/marcela-rogante-xfPpB7Pe8NA-unsplash.jpg";
-
 import { getCollection } from "astro:content";
 import FormattedDate from "@components/FormattedDate.astro";
 
@@ -13,21 +12,44 @@ const posts = (await getCollection("blog")).sort(
 
 <Layout>
   <section class="mb-8">
-    <h1 class="mb-6 text-6xl font-black">Broken retail workers wanted!</h1>
-    <div>
+    <h1 class="mb-6 text-6xl font-black">Disgruntled retail workers wanted!</h1>
+    <div class="relative mb-4">
       <Image
-        class="rounded-lg"
+        class="rounded-lg shadow shadow-gray-500"
         src={heroImage}
         alt="Panales storefront during daytime"
         loading="eager"
       />
+      <div
+        class="absolute inset-0 rounded-lg bg-gradient-to-t from-rose-600 via-rose-600/30"
+      >
+      </div>
+      <h1 class="absolute bottom-0 left-0 p-4 text-2xl font-bold text-white">
+        See how we can help you today!
+      </h1>
     </div>
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae
+      maxime, minus laborum non quod maiores aperiam a, repellendus vel nemo,
+      perferendis impedit aliquid modi qui quas accusantium adipisci distinctio
+      laudantium.
+    </p>
   </section>
   <section class="mb-8">
     <h2 class="mb-4 text-4xl font-bold">Unleash your inner rage</h2>
-    <div class="my-4 flex w-full gap-2">
-      <Image class="w-1/2 rounded-lg" src={heroImage} alt="" loading="eager" />
-      <Image class="w-1/2 rounded-lg" src={heroImage} alt="" loading="eager" />
+    <div class="my-4 flex w-full gap-4">
+      <Image
+        class="w-1/2 rounded-lg shadow shadow-gray-500"
+        src={heroImage}
+        alt=""
+        loading="eager"
+      />
+      <Image
+        class="w-1/2 rounded-lg shadow shadow-gray-500"
+        src={heroImage}
+        alt=""
+        loading="eager"
+      />
     </div>
     <p>
       Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae
@@ -38,13 +60,13 @@ const posts = (await getCollection("blog")).sort(
   </section>
   <section>
     <h2 class="mb-4 text-4xl font-bold">See what we're working on</h2>
-    <div class="grid grid-cols-2 gap-2">
+    <div class="grid grid-cols-2 gap-4">
       {
         posts.map((post) => (
-          <div>
+          <div class="transition-transform duration-300 ease-in-out hover:scale-105">
             <a href={`/blog/${post.slug}/`}>
               <Image
-                class="rounded-lg"
+                class="mb-2 rounded-lg shadow shadow-gray-500"
                 src={post.data.heroImage.url}
                 alt={post.data.description}
               />
@@ -60,5 +82,5 @@ const posts = (await getCollection("blog")).sort(
       }
       <div></div>
     </div>
-  </section></Layout
->
+  </section>
+</Layout>

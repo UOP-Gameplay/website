@@ -11,12 +11,16 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 
 <Layout>
   <article>
-    <p class="mb-2 text-sm text-gray-500"><a href="/">Go back home</a></p>
+    <p
+      class="mb-2 w-fit text-sm text-gray-500 transition-colors hover:text-rose-500"
+    >
+      <a href="/">Go back home</a>
+    </p>
     <div>
       {
         heroImage && (
           <Image
-            class="rounded-lg shadow-xl"
+            class="rounded-lg shadow shadow-gray-500"
             src={heroImage.url}
             alt={description}
             loading="eager"

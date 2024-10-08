@@ -4,16 +4,22 @@ import { Icon } from "astro-icon/components";
 const today = new Date();
 ---
 
-<footer class="p-6 text-center">
+<footer class="mt-8 p-6 text-center">
   &copy; {today.getFullYear()} Retail Therapy from Team 6. All rights reserved.
   <div class="mt-4 flex justify-center gap-4">
     <a href="https://twitter.com/" target="_blank">
       <span class="sr-only">Follow us on Twitter</span>
-      <Icon class="h-10 w-auto" name="mdi:twitter" />
+      <Icon
+        class="h-10 w-auto transition-colors hover:text-sky-500"
+        name="mdi:twitter"
+      />
     </a>
     <a href="https://instagram.com/" target="_blank">
       <span class="sr-only">Follow us on Instagram</span>
-      <Icon class="h-10 w-auto" name="mdi:instagram" />
+      <Icon
+        class="h-10 w-auto transition-colors hover:text-pink-500"
+        name="mdi:instagram"
+      />
     </a>
   </div>
 </footer>
