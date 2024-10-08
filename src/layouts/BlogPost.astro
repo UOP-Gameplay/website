@@ -11,7 +11,7 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 
 <Layout>
   <article>
-    <p class="text-sm text-gray-500 mb-2"><a href="/">Go back home</a></p>
+    <p class="mb-2 text-sm text-gray-500"><a href="/">Go back home</a></p>
     <div>
       {
         heroImage && (
@@ -19,11 +19,12 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
             class="rounded-lg shadow-xl"
             src={heroImage.url}
             alt={description}
+            loading="eager"
           />
         )
       }
     </div>
-    <div class="m-4 flex flex-col justify-center items-center">
+    <div class="m-4 flex flex-col items-center justify-center">
       <div class="flex gap-1 text-gray-500">
         <FormattedDate date={pubDate} />
         {
