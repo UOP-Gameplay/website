@@ -1,35 +1,64 @@
 ---
-import BaseHead from "../components/BaseHead.astro";
-import Header from "../components/Header.astro";
-import Footer from "../components/Footer.astro";
-import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+import Layout from "@layouts/Layout.astro";
 import { Image } from "astro:assets";
-import heroImage from "../assets/marcela-rogante-xfPpB7Pe8NA-unsplash.jpg";
+import heroImage from "@assets/marcela-rogante-xfPpB7Pe8NA-unsplash.jpg";
+
+import { getCollection } from "astro:content";
+import FormattedDate from "@components/FormattedDate.astro";
+
+const posts = (await getCollection("blog")).sort(
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
+);
 ---
 
-<!doctype html>
-<html lang="en">
-  <head>
-    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-  </head>
-  <body>
-    <Header />
-    <main>
-      <h1>Broken retail workers wanted</h1>
-      <div>
-        <Image
-          src={heroImage}
-          alt="Panales storefront during daytime"
-          loading="eager"
-        />
-      </div>
-      <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae
-        maxime, minus laborum non quod maiores aperiam a, repellendus vel nemo,
-        perferendis impedit aliquid modi qui quas accusantium adipisci
-        distinctio laudantium.
-      </p>
-    </main>
-    <Footer />
-  </body>
-</html>
+<Layout>
+  <section class="mb-8">
+    <h1 class="text-6xl font-black">Broken retail workers wanted!</h1>
+    <div>
+      <Image
+        class="rounded-lg"
+        src={heroImage}
+        alt="Panales storefront during daytime"
+        loading="eager"
+      />
+    </div>
+  </section>
+  <section class="mb-8">
+    <h2 class="text-4xl">Unleash your inner rage</h2>
+    <div class="flex w-full gap-2">
+      <Image class="rounded-lg w-1/2" src={heroImage} alt="" />
+      <Image class="rounded-lg w-1/2" src={heroImage} alt="" />
+    </div>
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae
+      maxime, minus laborum non quod maiores aperiam a, repellendus vel nemo,
+      perferendis impedit aliquid modi qui quas accusantium adipisci distinctio
+      laudantium.
+    </p>
+  </section>
+  <section>
+    <h2 class="text-4xl">See what we're working on</h2>
+    <div class="grid grid-cols-2 gap-2">
+      {
+        posts.map((post) => (
+          <div>
+            <a href={`/blog/${post.slug}/`}>
+              <Image
+                class="rounded-lg"
+                src={post.data.heroImage.url}
+                alt={post.data.description}
+              />
+              <div class="flex flex-col">
+                <h4 class="text-2xl">{post.data.title}</h4>
+                <p class="text-gray-500">
+                  <FormattedDate date={post.data.pubDate} />
+                </p>
+              </div>
+            </a>
+          </div>
+        ))
+      }
+      <div></div>
+    </div>
+  </section></Layout
+>
