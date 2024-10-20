@@ -1,15 +1,12 @@
 ---
 import { SITE_TITLE } from "@consts";
+import { Icon } from "astro-icon/components";
 ---
 
 <header
   class="mb-12 flex h-16 items-center justify-center bg-white drop-shadow-lg"
 >
   <nav>
-    <h1
-      class="bg-gradient-to-r from-rose-600 via-orange-300 to-sky-400 bg-clip-text text-4xl font-black text-transparent drop-shadow-sm"
-    >
-      <a href="/">{SITE_TITLE}</a>
-    </h1>
+    <Icon class="drop-shadow-sm w-auto h-12" name="logo" />
   </nav>
 </header>
