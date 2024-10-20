@@ -12,7 +12,7 @@ const posts = (await getCollection("blog")).sort(
 
 <Layout>
   <section class="mb-8">
-    <h1 class="mb-6 text-6xl font-black">Disgruntled retail workers wanted!</h1>
+    <h2 class="mb-6 text-6xl font-black">Disgruntled retail workers wanted!</h1>
     <div class="relative mb-4">
       <Image
         class="rounded-lg shadow shadow-gray-500"
@@ -24,7 +24,7 @@ const posts = (await getCollection("blog")).sort(
         class="absolute inset-0 rounded-lg bg-gradient-to-t from-rose-600 via-rose-600/30"
       >
       </div>
-      <h1 class="absolute bottom-0 left-0 p-4 text-2xl font-bold text-white">
+      <h3 class="absolute bottom-0 left-0 p-4 text-2xl font-bold text-white">
         See how we can help you today!
       </h1>
     </div>
@@ -36,7 +36,7 @@ const posts = (await getCollection("blog")).sort(
     </p>
   </section>
   <section class="mb-8">
-    <h2 class="mb-4 text-4xl font-bold">Unleash your inner rage</h2>
+    <h3 class="mb-4 text-4xl font-bold">Unleash your inner rage</h2>
     <div class="my-4 flex w-full gap-4">
       <Image
         class="w-1/2 rounded-lg shadow shadow-gray-500"
@@ -59,8 +59,8 @@ const posts = (await getCollection("blog")).sort(
     </p>
   </section>
   <section>
-    <h2 class="mb-4 text-4xl font-bold">See what we're working on</h2>
-    <div class="grid grid-cols-2 gap-4">
+    <h3 class="mb-4 text-4xl font-bold">See what we're working on</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
       {
         posts.map((post) => (
           <div class="group">
