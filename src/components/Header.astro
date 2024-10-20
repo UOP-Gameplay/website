@@ -4,9 +4,11 @@ import { Icon } from "astro-icon/components";
 ---
 
 <header
-  class="mb-12 flex h-16 items-center justify-center bg-white drop-shadow-lg"
+  class="mb-12 flex items-center justify-center bg-gradient-to-r from-rose-600 via-orange-300 to-sky-400 drop-shadow-lg"
 >
   <nav>
-    <Icon class="drop-shadow-sm w-auto h-12" name="logo" />
+    <a href="/">
+      <Icon class="m-2 h-16 w-auto drop-shadow-sm" name="logo" />
+    </a>
   </nav>
 </header>
