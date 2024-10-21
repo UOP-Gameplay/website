@@ -1,6 +1,4 @@
 ---
-export const prerender = false;
-
 import { SITE_TITLE } from "@consts";
 import { Icon } from "astro-icon/components";
 import SteamAPI from "steamapi";
@@ -12,15 +10,17 @@ let players = await steam.getGamePlayers(448280);
 <header
   class="mb-12 flex items-center justify-center bg-gradient-to-r from-rose-600 via-orange-300 to-sky-400 drop-shadow-lg"
 >
-  <nav class="mx-12 grid w-full grid-cols-3 items-center font-bold">
-    <a class="col-start-2 flex justify-center" href="/">
+  <nav
+    class="mx-12 grid w-full grid-cols-1 items-center font-bold md:grid-cols-3"
+  >
+    <a class="flex justify-center md:col-start-2" href="/">
       <Icon
         title={SITE_TITLE}
         class="m-2 h-16 w-auto drop-shadow-sm"
         name="logo"
       />
     </a>
-    <div class="flex justify-end">
+    <div class="hidden justify-end md:visible md:flex">
       <div
         class="flex w-fit items-center gap-2 rounded-xl bg-white p-2 drop-shadow-sm"
       >
