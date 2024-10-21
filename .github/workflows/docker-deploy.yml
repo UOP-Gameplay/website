@@ -33,4 +33,4 @@ jobs:
         with:
           context: .
           push: true
-          tags: ghcr.io/troylusty/retailtherapy
+          tags: ghcr.io/UOP-Gameplay/retailtherapy
