@@ -37,15 +37,15 @@ const posts = (await getCollection("blog")).sort(
   </section>
   <section class="mb-8">
     <h3 class="mb-4 text-4xl font-bold">Unleash your inner rage</h3>
-    <div class="my-4 flex w-full gap-4">
+    <div class="my-4 flex w-full flex-col gap-4 md:flex-row">
       <Image
-        class="w-1/2 rounded-lg shadow shadow-gray-500"
+        class="w-full rounded-lg shadow shadow-gray-500 md:w-1/2"
         src={heroImage}
         alt=""
         loading="eager"
       />
       <Image
-        class="w-1/2 rounded-lg shadow shadow-gray-500"
+        class="w-full rounded-lg shadow shadow-gray-500 md:w-1/2"
         src={heroImage}
         alt=""
         loading="eager"

@@ -10,6 +10,9 @@ export default {
         serif: [...defaultTheme.fontFamily.serif],
         mono: [...defaultTheme.fontFamily.mono],
       },
+      backgroundImage: {
+        "pattern-texture": "url('/src/assets/shapes.jpg')",
+      },
     },
   },
   plugins: [require("@tailwindcss/typography")],

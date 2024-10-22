@@ -10,7 +10,9 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "@consts";
   <head>
     <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
   </head>
-  <body>
+  <body
+    class="bg-opacity-70 bg-pattern-texture bg-[length:512px_512px] bg-repeat"
+  >
     <Header />
     <main class="mx-auto max-w-[calc(100%-2rem)] md:max-w-screen-md">
       <slot />
