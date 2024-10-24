@@ -10,6 +10,8 @@ interface Props {
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 
 const { title, description, image = "/blog-placeholder-1.jpg" } = Astro.props;
+
+import grandstander from "@fontsource-variable/grandstander/files/grandstander-latin-wght-normal.woff2?url";
 ---
 
 <!-- Global Metadata -->
@@ -47,3 +49,12 @@ const { title, description, image = "/blog-placeholder-1.jpg" } = Astro.props;
     navigation: auto;
   }
 </style>
+
+<!-- Font Preload -->
+<link
+  rel="preload"
+  as="font"
+  type="font/woff2"
+  href={grandstander}
+  crossorigin="anonymous"
+/>
