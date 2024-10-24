@@ -2,6 +2,8 @@
 import Layout from "@layouts/Layout.astro";
 import { Image } from "astro:assets";
 import heroImage from "@assets/marcela-rogante-xfPpB7Pe8NA-unsplash.jpg";
+import vrImage from "@assets/minh-pham-jSAb1ifwf8Y-unsplash.jpg";
+import supermarketImage from "@assets/hanson-lu-sq5P00L7lXc-unsplash.jpg";
 import { getCollection } from "astro:content";
 import FormattedDate from "@components/FormattedDate.astro";
 
@@ -40,13 +42,13 @@ const posts = (await getCollection("blog")).sort(
     <div class="my-4 flex w-full flex-col gap-4 md:flex-row">
       <Image
         class="w-full rounded-lg shadow shadow-gray-500 md:w-1/2"
-        src={heroImage}
+        src={vrImage}
         alt=""
         loading="eager"
       />
       <Image
         class="w-full rounded-lg shadow shadow-gray-500 md:w-1/2"
-        src={heroImage}
+        src={supermarketImage}
         alt=""
         loading="eager"
       />
@@ -64,7 +66,7 @@ const posts = (await getCollection("blog")).sort(
       {
         posts.map((post) => (
           <div class="group">
-            <a href={`/blog/${post.slug}/`}>
+            <a href={`/blog/${post.slug}/`} title={post.data.title}>
               <div class="relative mb-2">
                 <Image
                   class="rounded-lg shadow shadow-gray-500 delay-100"
@@ -72,7 +74,7 @@ const posts = (await getCollection("blog")).sort(
                   alt={post.data.description}
                   loading="lazy"
                 />
-                <div class="absolute inset-0 rounded-lg bg-gradient-to-t from-rose-600 via-rose-600/30 opacity-0 transition-all delay-100 duration-300 ease-linear group-hover:opacity-100" />
+                <div class="absolute inset-0 rounded-lg bg-gradient-to-t from-rose-600 via-rose-600/30 opacity-0 transition-all delay-100 duration-300 ease-in-out group-hover:opacity-100" />
               </div>
               <div class="flex flex-col">
                 <h4 class="text-2xl font-semibold">{post.data.title}</h4>

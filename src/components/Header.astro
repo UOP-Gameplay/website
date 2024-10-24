@@ -5,10 +5,13 @@ import SteamAPI from "steamapi";
 
 const steam = new SteamAPI(false);
 let players = await steam.getGamePlayers(271590);
+var playersFormatted = players.toLocaleString(undefined, {
+  minimumFractionDigits: 0,
+});
 ---
 
 <header
-  class="fixed top-0 z-50 flex w-full items-center justify-center bg-gradient-to-r from-rose-600 via-orange-300 to-sky-400 drop-shadow-lg"
+  class="fixed top-0 z-50 flex w-full items-center justify-center border-b-2 border-b-white/40 bg-gradient-to-r from-rose-600 via-orange-300 to-sky-400 drop-shadow-lg"
 >
   <nav
     class="mx-12 grid w-full grid-cols-1 items-center font-bold md:grid-cols-3"
@@ -31,7 +34,7 @@ let players = await steam.getGamePlayers(271590);
           <span class="relative inline-flex h-3 w-3 rounded-full bg-emerald-500"
           ></span>
         </span>
-        <p>{players} players in-game!</p>
+        <p>{playersFormatted} players in-game!</p>
       </div>
     </div>
   </nav>

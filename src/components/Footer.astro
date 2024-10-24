@@ -7,17 +7,24 @@ const today = new Date();
 <footer class="mt-8 p-6 text-center">
   &copy; {today.getFullYear()} Retail Therapy from Team 6. All rights reserved.
   <div class="mt-4 flex justify-center gap-4">
-    <a href="https://twitter.com/" target="_blank">
+    <a href="https://store.steampowered.com/" target="_blank" title="Steam">
       <span class="sr-only">Follow us on Twitter</span>
       <Icon
-        class="h-10 w-auto transition-colors delay-100 duration-300 hover:text-sky-500"
+        class="h-10 w-auto transition-colors delay-100 duration-300 ease-in-out hover:text-blue-700"
+        name="mdi:steam"
+      />
+    </a>
+    <a href="https://twitter.com/" target="_blank" title="Twitter">
+      <span class="sr-only">Follow us on Twitter</span>
+      <Icon
+        class="h-10 w-auto transition-colors delay-100 duration-300 ease-in-out hover:text-sky-500"
         name="mdi:twitter"
       />
     </a>
-    <a href="https://instagram.com/" target="_blank">
+    <a href="https://instagram.com/" target="_blank" title="Instagram">
       <span class="sr-only">Follow us on Instagram</span>
       <Icon
-        class="h-10 w-auto transition-colors delay-100 duration-300 hover:text-pink-500"
+        class="h-10 w-auto transition-colors delay-100 duration-300 ease-in-out hover:text-pink-500"
         name="mdi:instagram"
       />
     </a>
