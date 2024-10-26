@@ -6,6 +6,7 @@ import vrImage from "@assets/minh-pham-jSAb1ifwf8Y-unsplash.jpg";
 import supermarketImage from "@assets/hanson-lu-sq5P00L7lXc-unsplash.jpg";
 import { getCollection } from "astro:content";
 import FormattedDate from "@components/FormattedDate.astro";
+import { YouTube } from "astro-embed";
 
 const posts = (await getCollection("blog")).sort(
   (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
@@ -60,6 +61,14 @@ const posts = (await getCollection("blog")).sort(
       laudantium.
     </p>
   </section>
+  <section class="mb-8">
+    <h3 class="mb-4 text-4xl font-bold">Watch our latest devlog</h3>
+    <YouTube
+      class="h-auto w-full max-w-full rounded-lg shadow shadow-gray-500"
+      id="5AKl_cEB26c"
+      posterQuality="max"
+    />
+  </section>
   <section>
     <h3 class="mb-4 text-4xl font-bold">See what we're working on</h3>
     <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
@@ -69,7 +78,7 @@ const posts = (await getCollection("blog")).sort(
             <a href={`/blog/${post.slug}/`} title={post.data.title}>
               <div class="relative mb-2">
                 <Image
-                  class="rounded-lg shadow shadow-gray-500 delay-100"
+                  class="rounded-lg shadow shadow-gray-500"
                   src={post.data.heroImage.url}
                   alt={post.data.description}
                   loading="lazy"
