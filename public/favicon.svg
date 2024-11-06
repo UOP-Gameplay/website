@@ -1,89 +1,14 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Created with Inkscape (http://www.inkscape.org/) -->
-
-<svg
-   width="238.91525"
-   height="363.03394"
-   viewBox="0 0 63.212993 96.052729"
-   version="1.1"
-   id="svg1"
-   inkscape:version="1.4 (e7c3feb100, 2024-10-09)"
-   sodipodi:docname="rt-logo.svg.2024_11_06_09_36_35.0.svg"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:svg="http://www.w3.org/2000/svg">
-  <sodipodi:namedview
-     id="namedview1"
-     pagecolor="#000000"
-     bordercolor="#000000"
-     borderopacity="0.25"
-     inkscape:showpageshadow="2"
-     inkscape:pageopacity="0.0"
-     inkscape:pagecheckerboard="0"
-     inkscape:deskcolor="#d1d1d1"
-     inkscape:document-units="mm"
-     inkscape:zoom="0.5"
-     inkscape:cx="524"
-     inkscape:cy="673"
-     inkscape:window-width="1536"
-     inkscape:window-height="792"
-     inkscape:window-x="0"
-     inkscape:window-y="0"
-     inkscape:window-maximized="1"
-     inkscape:current-layer="layer1"
-     showguides="false">
-    <inkscape:page
-       x="0"
-       y="0"
-       width="63.212994"
-       height="96.052727"
-       id="page2"
-       margin="0"
-       bleed="0" />
-  </sodipodi:namedview>
-  <defs
-     id="defs1">
-    <inkscape:path-effect
-       effect="fillet_chamfer"
-       id="path-effect9"
-       is_visible="true"
-       lpeversion="1"
-       nodesatellites_param="F,0,1,1,0,19.140445,0,1 @ F,0,1,1,0,19.140445,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1"
-       radius="0"
-       unit="px"
-       method="auto"
-       mode="F"
-       chamfer_steps="1"
-       flexible="false"
-       use_knot_distance="true"
-       apply_no_radius="true"
-       apply_with_radius="true"
-       only_selected="false"
-       hide_knots="false" />
-  </defs>
-  <g
-     inkscape:label="Layer 1"
-     inkscape:groupmode="layer"
-     id="layer1"
-     transform="translate(-18.75067,-82.5448)">
-    <title
-       id="title1">Retail Therapy</title>
-    <path
-       id="rect5"
-       style="fill:#ffffff;stroke-width:0.52488"
-       d="m 67.398375,126.42578 c 0.05964,11.38094 0.02675,22.76996 -0.0046,34.15499 -0.02908,10.57031 8.534847,19.13929 19.105823,19.13929 h 32.034839 c 6.68802,0 12.07226,-5.38423 12.07226,-12.07226 0,-6.68803 -5.38424,-12.07224 -12.07226,-12.07224 6.68802,0 12.07226,-5.38424 12.07226,-12.07226 0,-6.68803 -5.38424,-12.07226 -12.07226,-12.07226 6.68802,0 12.07226,-5.38422 12.07226,-12.07224 0,-6.68803 -5.38424,-12.07226 -12.07226,-12.07226 H 86.334569 c -10.570976,0 -18.991584,8.56848 -18.936194,19.13924 z"
-       sodipodi:nodetypes="ccsscscssc"
-       inkscape:path-effect="#path-effect9"
-       inkscape:original-d="m 67.194124,107.28654 c 0.409465,24.1161 0.165052,48.29898 0.165052,72.43352 h 51.175284 c 6.68802,0 12.07226,-5.38423 12.07226,-12.07226 0,-6.68803 -5.38424,-12.07224 -12.07226,-12.07224 6.68802,0 12.07226,-5.38424 12.07226,-12.07226 0,-6.68803 -5.38424,-12.07226 -12.07226,-12.07226 6.68802,0 12.07226,-5.38422 12.07226,-12.07224 0,-6.68803 -5.38424,-12.07226 -12.07226,-12.07226 z"
-       transform="translate(-48.643054,-1.122532)" />
-    <rect
-       style="fill:#ffffff;stroke-width:0.350967"
-       id="rect9"
-       width="24.508615"
-       height="54.646755"
-       x="18.750721"
-       y="82.5448"
-       ry="12.254308" />
-  </g>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="76.194" height="121.49" version="1.1" viewBox="0 0 20.16 32.143" xmlns="http://www.w3.org/2000/svg">
+<g transform="translate(-126.15 -103.5)">
+<title>Retail Therapy</title>
+<g transform="matrix(1.1419 0 0 1.1419 -23.164 -19.765)">
+<path d="m143.94 107.95c-4.5266 0.0888-4.5218 6.837 5e-3 6.9193 4.7011 0.0854 4.696-7.0115-5e-3 -6.9193zm-8.2358 4.7073c-0.19118-1e-3 -0.381 0.0805-0.51363 0.2394l-0.61545 0.73763c-1.6197-1.7585-4.5293 0.51872-3.008 2.56 0.92435 1.2014 1.8569 2.1218 3.0044 2.6609-1.7304 3.3794-0.4932 5.6937-0.37425 5.8998-0.28539 1.0702-0.12303 0.57702-0.60278 2.4727l-1.0137 3.4194-1.492 2.4025c-1.3901 2.2413 1.9719 4.3264 3.3619 2.0876l1.6296-2.6324c0.0943-0.14926 0.16621-0.30912 0.21541-0.47969l0.68514-2.3079 0.60279-2.1822 3.008 2.9673 1.8966 4.3765c1.0468 2.4172 4.6745 0.84511 3.6289-1.5721l-2.0518-4.7295c-0.10087-0.23249-0.24488-0.44284-0.42448-0.61998l-1.2386-1.2241-2.0052-1.9771-1.1698-1.1549 1.2336-1.5377c0.29015 0.39543 0.61935 0.76089 0.98201 1.0911 1.3298 1.1982 2.9559 1.5535 4.977 1.6015 2.6325 0.0221 2.6692-3.9276 0.0367-3.9547-1.6066-0.0357-2.0541-0.30401-2.369-0.58694-0.22143-0.19928-0.47631-0.5092-0.83675-1.0603-0.25709-0.39733-0.52369-0.84394-0.85213-1.3938-0.2977-0.4982-0.58425-1.0036-0.91639-1.4784-0.18452-0.24971-0.53546-0.66674-1.1259-0.91277-0.2977-0.12301-0.58411-0.17596-0.83629-0.18826l-1e-3 1e-3c-0.39611-0.0221-0.89193 0.0539-1.5599 0.2593-0.65759 0.0348-1.0579 0.0129-1.3495-0.048-0.29139-0.0611-0.61668-0.18165-1.1236-0.69012l0.7675-0.91956c0.23578-0.28252 0.19835-0.70007-0.0842-0.93585l-0.043-0.0353c-0.1236-0.10315-0.27307-0.15434-0.42177-0.15522z" stroke-width="1.2301"/>
+</g>
+</g>
+<style>path { fill: black; }
+      @media (prefers-color-scheme: dark) {
+         path { fill: white; }
+      }</style>
 </svg>
+
