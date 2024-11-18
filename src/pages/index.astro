@@ -15,7 +15,7 @@ const posts = (await getCollection("blog")).sort(
 
 <Layout>
   <section class="mb-8">
-    <h2 class="mb-6 text-6xl font-black">Disgruntled retail workers wanted!</h2>
+    <h2 class="mb-6 text-6xl font-black" id="countdown"></h2>
     <div class="relative mb-4">
       <Image
         class="rounded-lg shadow shadow-gray-500"
@@ -31,6 +31,7 @@ const posts = (await getCollection("blog")).sort(
         See how we can help you today!
       </h3>
     </div>
+    <h3 class="mb-4 text-4xl font-bold">Disgruntled retail workers wanted!</h3>
     <p>
       Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae
       maxime, minus laborum non quod maiores aperiam a, repellendus vel nemo,
@@ -99,3 +100,36 @@ const posts = (await getCollection("blog")).sort(
     </div>
   </section>
 </Layout>
+
+<script>
+  var countDownDate = new Date("Dec 12, 2024").getTime();
+
+  var x = setInterval(function () {
+    var now = new Date().getTime();
+
+    var distance = countDownDate - now;
+
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor(
+      (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60),
+    );
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("countdown")!.innerHTML =
+      days +
+      "d " +
+      hours +
+      "h " +
+      minutes +
+      "m " +
+      seconds +
+      "s " +
+      "until launch!";
+
+    if (distance < 0) {
+      clearInterval(x);
+      document.getElementById("countdown")!.innerHTML = "EXPIRED";
+    }
+  }, 1000);
+</script>
