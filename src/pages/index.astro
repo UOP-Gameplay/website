@@ -32,15 +32,18 @@ const posts = (await getCollection("blog")).sort(
       </h3>
     </div>
     <h3 class="mb-4 text-4xl font-bold">Disgruntled retail workers wanted!</h3>
-    <p>
-      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae
-      maxime, minus laborum non quod maiores aperiam a, repellendus vel nemo,
-      perferendis impedit aliquid modi qui quas accusantium adipisci distinctio
-      laudantium.
+    <p class="text-gray-700">
+      Step into the bustling aisles of Retail Therapy, the VR game that places
+      you right into the everyday chaos of retail work! As a new employee at a
+      clothing outlet, your mission is to fulfil customer orders by carefully
+      collecting the right items — or snagging the wrong one in a moment of
+      frustration. It's up to you how you deliver the item too: directly into
+      their hands with care, or as a fast moving projectile aimed directly
+      towards them.
     </p>
   </section>
   <section class="mb-8">
-    <h3 class="mb-4 text-4xl font-bold">Unleash your inner rage</h3>
+    <h3 class="mb-4 text-4xl font-bold">Unleash your inner frustration</h3>
     <div class="my-4 flex w-full flex-col gap-4 md:flex-row">
       <Image
         class="w-full rounded-lg shadow shadow-gray-500 md:w-1/2"
@@ -55,11 +58,13 @@ const posts = (await getCollection("blog")).sort(
         loading="eager"
       />
     </div>
-    <p>
-      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae
-      maxime, minus laborum non quod maiores aperiam a, repellendus vel nemo,
-      perferendis impedit aliquid modi qui quas accusantium adipisci distinctio
-      laudantium.
+    <p class="text-gray-700">
+      Be wary though! Whilst you race to meet quota, you'll need to keep a
+      vigilant eye out for shoplifters lurking in the aisles, ready to test your
+      observational skills and reaction time. With each shift, the stakes rise
+      as you balance customer satisfaction, the chaos of mixed-up orders, and
+      the thrill of catching a thief. Get ready for an entertaining experience
+      where every day on the job is one you won't want to call in sick for!
     </p>
   </section>
   <section class="mb-8">
@@ -88,7 +93,7 @@ const posts = (await getCollection("blog")).sort(
               </div>
               <div class="flex flex-col">
                 <h4 class="text-2xl font-semibold">{post.data.title}</h4>
-                <p class="text-gray-500">
+                <p class="text-gray-700">
                   <FormattedDate date={post.data.pubDate} />
                 </p>
               </div>
