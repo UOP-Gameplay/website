@@ -3,7 +3,7 @@ import Layout from "@layouts/Layout.astro";
 import { Image } from "astro:assets";
 import heroImage from "@assets/marcela-rogante-xfPpB7Pe8NA-unsplash.jpg";
 import vrImage from "@assets/minh-pham-jSAb1ifwf8Y-unsplash.jpg";
-import supermarketImage from "@assets/hanson-lu-sq5P00L7lXc-unsplash.jpg";
+import shoppersImage from "@assets/shoppers.jpg";
 import { getCollection } from "astro:content";
 import FormattedDate from "@components/FormattedDate.astro";
 import { YouTube } from "astro-embed";
@@ -53,7 +53,7 @@ const posts = (await getCollection("blog")).sort(
       />
       <Image
         class="w-full rounded-lg shadow shadow-gray-500 md:w-1/2"
-        src={supermarketImage}
+        src={shoppersImage}
         alt=""
         loading="eager"
       />
