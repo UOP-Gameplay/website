@@ -1,9 +1,13 @@
 ---
 import Layout from "@layouts/Layout.astro";
 import { Image } from "astro:assets";
-import heroImage from "@assets/marcela-rogante-xfPpB7Pe8NA-unsplash.jpg";
-import vrImage from "@assets/minh-pham-jSAb1ifwf8Y-unsplash.jpg";
-import shoppersImage from "@assets/shoppers.jpg";
+import shoppersImage from "@assets/screenshot-shoppers.jpg";
+import customerOptionImage from "@assets/screenshot-customeroption.jpg";
+import throwingImage from "@assets/screenshot-throwing.jpg";
+import menuImage from "@assets/screenshot-menu.jpg";
+import clothesImage from "@assets/screenshot-clothes.jpg";
+import shopImage from "@assets/screenshot-shop.jpg";
+import scoreImage from "@assets/screenshot-score.jpg";
 import { getCollection } from "astro:content";
 import FormattedDate from "@components/FormattedDate.astro";
 import { YouTube } from "astro-embed";
@@ -19,7 +23,7 @@ const posts = (await getCollection("blog")).sort(
     <div class="relative mb-8">
       <Image
         class="rounded-lg shadow shadow-gray-500"
-        src={heroImage}
+        src={shoppersImage}
         alt="Panales storefront during daytime"
         loading="eager"
       />
@@ -52,16 +56,24 @@ const posts = (await getCollection("blog")).sort(
   </section>
   <section class="mb-8">
     <h3 class="mb-4 text-4xl font-bold">Unleash your inner frustration</h3>
+<div class="my-4 flex w-full flex-row">
+      <Image
+          class="w-full rounded-lg shadow shadow-gray-500 aspect-[3/1] object-cover"
+        src={menuImage}
+        alt=""
+        loading="eager"
+      />
+    </div>
     <div class="my-4 flex w-full flex-col gap-4 md:flex-row">
       <Image
         class="w-full rounded-lg shadow shadow-gray-500 md:w-1/2"
-        src={vrImage}
+        src={customerOptionImage}
         alt=""
         loading="eager"
       />
       <Image
         class="w-full rounded-lg shadow shadow-gray-500 md:w-1/2"
-        src={shoppersImage}
+        src={throwingImage}
         alt=""
         loading="eager"
       />
@@ -74,6 +86,28 @@ const posts = (await getCollection("blog")).sort(
       the thrill of catching a thief. Get ready for an entertaining experience
       where every day on the job is one you won't want to call in sick for!
     </p>
+<div class="my-4 flex w-full flex-col gap-4 md:flex-row">
+      <Image
+        class="w-full rounded-lg shadow shadow-gray-500 md:w-1/2"
+        src={clothesImage}
+        alt=""
+        loading="eager"
+      />
+      <Image
+        class="w-full rounded-lg shadow shadow-gray-500 md:w-1/2"
+        src={shopImage}
+        alt=""
+        loading="eager"
+      />
+</div>
+<div class="my-4 flex w-full flex-row">
+      <Image
+          class="w-full rounded-lg shadow shadow-gray-500 aspect-[3/1] object-cover"
+        src={scoreImage}
+        alt=""
+        loading="eager"
+      />
+    </div>
   </section>
   <section class="mb-8">
     <h3 class="mb-4 text-4xl font-bold">Watch our latest devlog</h3>
