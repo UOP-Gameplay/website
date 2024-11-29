@@ -8,7 +8,7 @@ import mdx from "@astrojs/mdx";
 export default defineConfig({
   site: "https://retailtherapy.troylusty.com",
   integrations: [tailwind(), icon(), mdx()],
-  output: "hybrid",
+  output: "static",
   image: {
     service: passthroughImageService(),
   },
